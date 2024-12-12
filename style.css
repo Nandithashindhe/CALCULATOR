@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#calc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+#content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input {
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form #output input {
+    font-size: 30px;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+
+#backspace, #clear {
+    background-color: rgb(237, 89, 30);
+    color: white;
+}
+
+#res {
+    text-align: right;
+    font-size: 30px;
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    outline: none;
+}
+
+body.dark-mode {
+    background-color: #2c2c2c;
+}
+
+body.dark-mode #calc {
+    background-color: #333;
+}
+
+body.dark-mode #content {
+    background-color: #444;
+}
+
+body.dark-mode form input {
+    background-color: #555;
+    color: white;
+}
+
+body.dark-mode #res {
+    background-color: #666;
+    color: white;
+    border: 2px solid #007bff;
+}
+
+body.dark-mode #backspace, body.dark-mode #clear {
+    background-color: rgb(237, 89, 30);
+}
+
+body.dark-mode form #output input {
+    color: white;
+}
+
+/* Dark Mode Switch Button */
+body.dark-mode button {
+    background-color: #f5f5f5; /* Light color for dark mode */
+    color: #333; /* Dark text */
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode button:hover {
+    background-color: #ddd;
+}
+
+/* Light Mode Switch Button */
+button {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333; /* Dark color for light mode */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #444;
+}
+
+button span {
+    margin-left: 10px;
+}
+
+body.dark-mode button span {
+    margin-left: 10px;
+}
